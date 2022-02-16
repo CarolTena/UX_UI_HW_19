@@ -3,6 +3,8 @@
   <head>
     <link href="CSS/Index.css" rel="stylesheet" type="text/css" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
   </head>
     <body>
     <header>
@@ -12,16 +14,16 @@
             <img src="Images/220123 Logo_Carol Tena_Final-05.png" />
           </li>
           <li>
-            <a href="#">About</a>
+            <a class="menuListLink" id="about" href="#">About</a>
           </li>
           <li>
-            <a href="#">Skills</a>
+            <a class="menuListLink" id="skills" href="#">Skills</a>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <a class="menuListLink" id="projects" href="#">Projects</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a class="menuListLink" id="contact" href="#">Contact</a>
           </li>
         </ul>
       </nav>
@@ -45,8 +47,10 @@
 
 
       </div>
+      <div id="heroInfo"></div>
       </section>
-    </header>
+
+   </header>
 
     <section class="aboutMe">
       <div class="flexContainerAboutMe">
@@ -104,7 +108,7 @@
               <img src="Images/projectMockUp2.png" alt="Image Project 2" />
             </div>
             <div class="MyWorkGrid">
-                <div><h3>GCBC/Radio-Canada RWD Website Redesign</h3>
+                <div><h3>CBC/Radio-Canada RWD Website Redesign</h3>
                 <p>The CBC/Radio-Canada is a Canadian public broadcaster for radio and television. The goal of this project was to redesign an RWD website with a focus on information architecture improvements and design.</p>
               <button class="project1Btn">View More</button>
               </div>
@@ -129,7 +133,7 @@
         <h3>Let's Connect!</h3>
         <ul class="icons">
           <li>
-            <div class="contactCircle">
+            <div class="contactCircle hoverSkillList">
               <img
                src="Images/Icon_Contact Phone.png"
                 alt="Phone"/>
@@ -141,7 +145,7 @@
             </a>
           </li>
           <li>
-            <div class="contactCircle">
+            <div class="contactCircle hoverSkillList">
               <img
                 src="Images/Icon_Contact Email.png"
                 alt="Email"
@@ -155,7 +159,7 @@
             </a>
           </li>
           <li>
-            <div class="contactCircle">
+            <div class="contactCircle hoverSkillList">
               <img
                 src="Images/Icon_Contact LinkedIn.png"
                 alt="LinkedIn"
@@ -171,22 +175,24 @@
       <div class="purpleFooter">
         <ul class="footerList">
           <li>
-            <a href="#">About</a>
+            <a class="menuListLink" id="aboutBottom" href="#">About</a>
           </li>
           <li>
-            <a href="#">Skills</a>
+            <a class="menuListLink" id="skillsBottom" href="#">Skills</a>
           </li>
           <li>
-            <a href="#">Projects</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
+            <a class="menuListLink" id="projectsBottom" href="#">Projects</a>
           </li>
         </ul>
         <div class="copyright">Copyright 2020</div>
       </div>
     </footer>
+
+    <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+    </div>
+</button>
+
   </body>
-  <script src="JS/index.js"></script>
+  <script src="JS/index.js" type="text/javascript"></script>
 </html>
 
